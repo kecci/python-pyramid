@@ -1,5 +1,7 @@
 # python-pyramid
 
+![alt](/assets/banner.png)
+
 ## Install Env And Pyramid
 
 create virtual env
@@ -17,13 +19,18 @@ install pyramid
 (venv) $ pip install pyramid
 ```
 
+install waitress
+```
+(venv) $ pip install waitress
+```
+
 create project
 ```
-(venv) $ mkdir quick_tutorial/hello_world
+(venv) $ mkdir app
 ```
 
 ## Setup Project
-create `quick_tutorial/hello_world/app.py`
+create `app/app.py`
 ```py
 from waitress import serve
 from pyramid.config import Configurator
@@ -46,7 +53,7 @@ if __name__ == '__main__':
 ## Run application
 Run the application:
 ```
-(venv) $ python quick_tutorial/hello_world/app.py
+(venv) $ python app/app.py
 ```
 
 Open http://localhost:6543/ in your browser.
